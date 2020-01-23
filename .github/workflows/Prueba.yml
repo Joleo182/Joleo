@@ -1,0 +1,17 @@
+name: Jose Leonardo Vera Moreno
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: La prueba de Leo de Run a one-line script
+      run: echo Haciendole prueba al sistema!
+    - name: Run a multi-line script
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
